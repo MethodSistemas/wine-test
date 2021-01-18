@@ -9,7 +9,8 @@ Abaixo os passos para instalar e rodar o projeto em sua máquina.
 ####  Os próximos passos são execuções de comando na pasta raiz do projeto.
   - Caso não saiba o significa ou como executar os comandos: 
     1. abra um terminal powershell na pasta raiz do projeto ou navegue com um powershell ja aberto até a pasta utilizando o comando "cd caminhodapasta";
-	2. escreva os comandos indicados e dê um enter.
+    2. escreva os comandos indicados e dê um enter.
+    3. no caso de estar utilizando o Visual Studio Code, você pode apertar " ctrl+' " e isso ja ira abrir um terminal no caminho da pasta aberta no VS Code no momento.
   - Execute o comando "dotnet dev-certs https --trust";
   - Execute o comando "npm install -g @angular/cli";
   
