@@ -1,0 +1,23 @@
+<h1 id="tableLabel">Catálogo</h1>
+
+<p>Uma lista com os vinhos disponíveis em nossa casa.</p>
+
+<a class="nav-link text-dark" [routerLink]="['/novovinho']">Adicionar Vinho</a>
+<p *ngIf="!wines"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="wines">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Safra</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let wine of wines">
+            <td>{{ wine.name }}</td>
+            <td>{{ wine.vintage | date: 'yyyy' }}</td>
+            <td>R$ {{ wine.price }}</td>
+        </tr>
+    </tbody>
+</table>

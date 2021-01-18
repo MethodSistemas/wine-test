@@ -1,0 +1,17 @@
+<h1 id="tableLabel">Novo Vinho</h1>
+
+<form #novovinhoForm="ngForm" (ngSubmit)="adicionarNovoVinho()" autocomplete="off">
+    <div class="mb-3">
+        <label for="vinhoNome" class="form-label">Nome</label>
+        <input name="name" [(ngModel)]="wine.name" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="safra" class="form-label">Safra</label>
+        <input name="vintage" [(ngModel)]="wine.vintage" type="date" class="form-control" id="safra">
+    </div>
+    <div class="mb-3">
+        <label for="preco" class="form-label">Preço</label>
+        <input name="price" [(ngModel)]="wine.price" type="number" step="0.01" class="form-control" id="preco">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
